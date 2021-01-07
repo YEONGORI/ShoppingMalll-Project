@@ -1,1 +1,148 @@
-hi
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge chrome=1s">
+    <title>Fivegrid</title>
+    <meta name="keywords", content="shopping mall, women, girl">
+    <meta name="description", content="shop any where for women and girl's ware">
+    <meta name="robots", content="index, follow, all">
+
+    {% load static%}
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Mquery.css' %}">
+
+    <!-- js -->
+    <link rel="stylesheet" href="{% static 'js/all.min.js' %}">
+    <link rel="stylesheet" href="{% static 'js/main.js' %}">
+
+    <!-- bootstrap grid -->
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap-grid.min.css' %}">
+
+    <!-- favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'images/favicon/apple-icon-57x57.png' %}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'images/favicon/apple-icon-60x60.png' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'images/favicon/favicon\apple-icon-72x72.png' %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'images/favicon/apple-icon-76x76.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'images/favicon/apple-icon-114x114.png' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'images/favicon/apple-icon-120x120.png' %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'images/favicon/apple-icon-144x144.png' %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'images/favicon/apple-icon-152x152.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicon/apple-icon-180x180.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static 'images/favicon/android-icon-192x192.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{% static 'images/favicon/favicon-96x96.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon/favicon-16x16.png' %}">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffffs">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- fontawesome -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+    <!-- open graph-->
+    <meta property="og:title" content="Ninegrid" />
+    <meta property="og:type" content="website" />
+    <meta property="description" content="shop any where for women and girl's ware" />
+    <meta property="og:url" content="https://www.fivegrid.com/" />
+    <meta property="og:image" content="https://www.fivegrid.com/images/logo.png" />
+    
+
+</head>
+<body>
+    <header>
+        <div class="top_navigation">
+            <div class="container" id="category">
+                <div class="row justify-content-between">
+                    <div class="col-4">
+                        <ul class="category_items">
+                            <li class="category_logo"><a href="index.html">Fivegird</a></li>
+                            <li><a href="">BEST</a></li>
+                            <li><a href="">NEW</a></li>
+                            <li><a href="">OUTER</a></li>
+                            <li><a href="">TOP</a></li>
+                            <li><a href="">BOTTOM</a></li>
+                            <li><a href="">SHOES</a></li>
+                            <li><a href="">ACC</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <ul class="category_main">
+                            <li><a href="">LOGIN</a></li>
+                            <li><a href="">JOIN</a></li>
+                            <li><a href="" class="cart" data-cart="5">CART</a></li>
+                            <li><a href="">WISH</a></li>
+                            <li><a href="" class="mypage">MYPAGE</a></li>
+                            <li>
+                                <span class="search_container" method="GET">
+                                    <form action="#">
+                                        <input type="text" name="search">
+                                        <button type="submit"><i class="fas fa-search"></i></button>
+                                    </form>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="main_navigation">
+            <h2 id="main"><a href="index.html">FIVEGRID</a></h2>
+        </div>
+    </header>
+    <main>
+        <section class="main_slides">
+            <h2 class="hidden">main_slides</h2>
+            <ul>
+                <li class="slide slide1">
+                    <div class="contents">
+                        <a href=""></a>
+                    </div>
+                </li>
+                <li class="slide slide2">
+                    <div class="contents">
+                        <a href=""></a>
+                    </div>
+                </li>
+                <li class="slide slide3">
+                    <div class="contents">
+                        <a href=""></a>
+                    </div>
+                </li>
+                <li class="slide slide4">
+                    <div class="contents">
+                        <a href=""></a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="main_banner">
+            <h2 class="hidden">banner</h2>
+            <div>
+                <p class="sub_title">너무춥다, 봄 빨리왔으면</p>
+                <p class="main_title"><strong>FIVEGRID</strong></p>
+                <p class="sub_title">@Fivegird 계정을 팔로우하고</p>
+                <p class="sub_title">신상 업데이트 소식을 받아보세요!</p>
+            </div>
+        <section class="new_arrivals">
+            <h2 class="hidden">new_arrivals</h2>
+        </section>
+        </section>
+        <section class="best_item">
+            <h2 class="hidden">best_item</h2>
+        </section>
+        <section>
+            <h2></h2>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

@@ -264,3 +264,15 @@ label #btn{
 #radio4:checked ~ .navigation_auto .auto_btn4{
     background: #353535;
 }
+
+/* banner */
+.banner{
+    line-height: 1;
+    padding: 0 20px;
+}
+.main_banner{
+    font-size: 40px;
+}
+.sub_banner{
+    font-size: 20px;
+}

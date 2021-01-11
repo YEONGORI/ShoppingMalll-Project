@@ -1,5 +1,7 @@
+<!DOCTYPE html>
 <html lang="kr">
 <head>
+    {% load static%}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge chrome=1s">
@@ -8,8 +10,6 @@
     <meta name="description", content="shop any where for women and girl's ware">
     <meta name="robots", content="index, follow, all">
     
-    {% load static%}
-
     <!-- css -->
 
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
@@ -111,7 +111,7 @@
         </div>
     </header>
     <main>
-        <div class="slider"></div>
+        <div class="slider">
             <div class="slide_container">
                 <!-- radio buttons -->
                 <input type="radio" name="radio-btn" id="radio1">
@@ -147,19 +147,21 @@
                 <label for="radio4" class="manual_btn"></label>
             </div>
         </div>
-        <section class="main_banner">
-
-        </section>
-        <section class="new_arrivals">
-
-        </section>
-        <section class="best_item">
-        </section>
-
-        <section>
-            
-        </section>
     </main>
+    <section class="banner">
+        <div class="sub_banner">존내춥당</div>
+        <div class="main_banner">FIVEGRID</div>
+        <div class="sub_banner">프론트앤드의 늪에서 날 꺼내줭</div>
+    </section>
+    <section class="new_arrivals">
+
+    </section>
+    <section class="best_item">
+    </section>
+
+    <section>
+        
+    </section>
     <footer>
 
     </footer>

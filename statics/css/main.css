@@ -13,6 +13,14 @@ font-weight: normal;}
     }
 }
 
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+
 /* common elements -typogaphy */
 body{
     position: relative;
@@ -49,7 +57,7 @@ header{
     width: 200px;
     height: 100%;
     background: white;
-    transition: all 0.5s ease;
+    transition: all 2s ease;
     z-index: 1111;
 }
 .sidebar p{
@@ -84,6 +92,7 @@ label #btn{
 .navbar{
     background-color: white;
     line-height: 30px;
+    padding: 12px;
 }
 
 /* header main navbar */
@@ -107,7 +116,53 @@ label #btn{
 .navbar_logo{
     font-size: 20px;
 }
+
+/* header search box */
+.search_box{
+    height: 20px;
+    width: 30px;
+    position: relative;
+}
+.search_box.active{
+    width: 200px;
+}
+.search_box input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #f3f3f3;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 0 20px 5px 10px;
+}
+.search_box .search_btn{
+    height: 20px;
+    width: 20px;
+    font-size: 15px;
+    color: #353535;
+    position: absolute;
+    top: 15%;
+    right: 5px;
+    transform: translateY(-10%);
+    background-color: #ad5454;
+    line-height: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.search_box .cancel_btn{
+    position: absolute;
+    top: 15%;
+    right: -10px;
+    transform: translateY(-10%);
+    color: #353535;
+    font-size: 15px;
+    cursor: pointer;
+}
 /* header sub navbar */
+.sub_navbar{
+    padding-top: 8px;
+}
 .sub_navbar ul{
     display: flex;
     justify-content: space-between;
@@ -123,7 +178,7 @@ label #btn{
 .slider{
     width: 640px;
     height: auto;
-    overflow: hidden;
+    overflow-x: hidden;
     position: relative;
 }
 .slide_container{
@@ -138,6 +193,9 @@ label #btn{
 .slide{
     width: 20%;
     transition: 1s;
+}
+.slide input{
+    display: none;
 }
 .slide img{
     width: 640px;
@@ -175,4 +233,34 @@ label #btn{
 }
 #radio4:checked ~ .first{
     margin-left: -60%;
+}
+
+/* css for automatic navigation */
+.navigation_auto{
+    position: absolute;
+    display: flex;
+    width: 640px;
+    justify-content: center;
+    margin-top: 400px;
+}
+.navigation_auto div{
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.navigation_auto div:not(:last-child){
+    margin-right: 20px;
+}
+#radio1:checked ~ .navigation_auto .auto_btn1{
+    background: #353535;
+}
+#radio2:checked ~ .navigation_auto .auto_btn2{
+    background: #353535;
+}
+#radio3:checked ~ .navigation_auto .auto_btn3{
+    background: #353535;
+}
+#radio4:checked ~ .navigation_auto .auto_btn4{
+    background: #353535;
 }
